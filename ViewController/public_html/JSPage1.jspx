@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <f:view>
+    <af:document id="d1">
+      <af:resource type="javascript" source="jquery1.js"/>
+      <af:resource type="javascript">
+$(document).ready(function(){
+
+ $("#cl1").click(function(){
+ $('[name="it1"]').val("Glenn Quagmire");
+    $("#it53").val("Glenn Quagmire");
+    
+    
+  // $('[name="it50"]').focus();
+   $(".xqe").focus();
+    
+  });
+  
+   
+});
+            </af:resource>
+     
+       
+      <af:form id="f1">
+    
+              <af:panelGroupLayout id="pgl1">
+                <af:panelGroupLayout id="pgl3" layout="horizontal">
+                  <af:spacer width="233" height="55" id="s1"/>
+                  <af:commandButton text="commandLink 1" id="cl1"
+                                    partialSubmit="true"
+                                    action="#{Bean1.action1}">
+                    
+                  </af:commandButton>
+                </af:panelGroupLayout>
+          <h:inputText id="it53"/>
+          <af:inputText label="Label 1"  clientComponent="true" id="it1"/>
+           <af:selectBooleanCheckbox text="selectBooleanCheckbox 1"
+                                      label="Label 1" id="sbc1"/>
+                <af:inputText label="Label 2" id="it2"/>
+                <af:inputText label="Label 3" id="it3"/>
+                <af:inputText label="Label 4" id="it4"/>
+                <af:inputText label="Label 5" id="it5"/>
+                <af:inputText label="Label 6" id="it6"/>
+                <af:inputText label="Label 7" id="it7"/>
+                <af:inputText label="Label 8" id="it8"/>
+                <af:inputText label="Label 9" id="it9"/>
+                <af:inputText label="Label 10" id="it10"/>
+                <af:inputText label="Label 11" id="it11"/>
+                <af:inputText label="Label 12" id="it12"/>
+                <af:inputText label="Label 13" id="it13"/>
+                <af:inputText label="Label 14" id="it14"/>
+                <af:inputText label="Label 15" id="it15"/>
+                <af:inputText label="Label 16" id="it16"/>
+                <af:inputText label="Label 17" id="it17"/>
+                <af:inputText label="Label 18" id="it18"/>
+                <af:inputText label="Label 19" id="it19"/>
+                <af:inputText label="Label 20" id="it20"/>
+                <af:inputText label="Label 21" id="it21"/>
+                <af:inputText label="Label 22" id="it22"/>
+                <af:inputText label="Label 23" id="it23"/>
+                <af:inputText label="Label 24" id="it24"/>
+                <af:inputText label="Label 25" id="it25"/>
+                <af:inputText label="Label 26" id="it26"/>
+                <af:inputText label="Label 27" id="it27"/>
+                <af:inputText label="Label 28" id="it28"/>
+                <af:inputText label="Label 29" id="it29"/>
+                <af:inputText label="Label 30" id="it30"/>
+                <af:inputText label="Label 31" id="it31"/>
+                <af:inputText label="Label 32" id="it32"/>
+                <af:inputText label="Label 33" id="it33"/>
+                <af:inputText label="Label 34" id="it34"/>
+                <af:inputText label="Label 35" id="it35"/>
+                <af:inputText label="Label 36" id="it36"/>
+                <af:inputText label="Label 37" id="it37"/>
+                <af:inputText label="Label 38" id="it38"/>
+                <af:inputText label="Label 39" id="it39"/>
+                <af:inputText label="Label 40" id="it40"/>
+                <af:inputText label="Label 41" id="it41"/>
+                <af:inputText label="Label 42" id="it42"/>
+                <af:inputText label="Label 43" id="it43"/>
+                <af:inputText label="Label 44" id="it44"/>
+                <af:inputText label="Label 45" id="it45"/>
+                <af:inputText label="Label 46" id="it46"/>
+                <af:inputText label="Label 47" id="it47"/>
+                <af:inputText label="Label 48" id="it48"/>
+                <af:inputText label="Label 49" id="it49"/>
+                <af:inputText label="Label 50" id="it50"  clientComponent="true"/>
+                <af:inputText label="Label 51" id="it51"/>
+                <af:inputText label="Label 52" id="it52"/>
+                <af:panelGroupLayout id="pgl2" clientComponent="true">
+            <af:selectBooleanCheckbox text="selectBooleanCheckbox 1"
+                                      label="Label 1" id="sbc2"/>
+                                      
+                                       <af:selectBooleanCheckbox text="selectBooleanCheckbox 1"
+                                      label="Label 1" id="sbc21"/>
+                                       <af:selectBooleanCheckbox text="selectBooleanCheckbox 1"
+                                      label="Label 1" id="sbc22"/>
+          </af:panelGroupLayout>
+              </af:panelGroupLayout>
+           
+          
+      </af:form>
+    </af:document>
+  </f:view>
+</jsp:root>
