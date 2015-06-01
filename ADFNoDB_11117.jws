@@ -20,6 +20,7 @@
    <list n="listOfChildren">
       <hash><url n="URL" path="cssViewController/cssViewController.jpr"/></hash>
       <hash><url n="URL" path="declarativeCompVC/declarativeCompVC.jpr"/></hash>
+      <hash><url n="URL" path="Exceptionss/Exceptionss.jpr"/></hash>
       <hash><url n="URL" path="filters_webProject/filters_webProject.jpr"/></hash>
       <hash><url n="URL" path="JavaProject/javaa.jpr"/></hash>
       <hash><url n="URL" path="javaScriptViewController/javaScriptViewController.jpr"/></hash>
