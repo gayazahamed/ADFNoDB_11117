@@ -162,8 +162,8 @@
       </list>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
-      <value n="j2eeWebAppName" v="ADFNoDB_11117-javaScriptViewController-webapp"/>
-      <value n="j2eeWebContextRoot" v="ADFNoDB_11117-javaScriptViewController-context-root"/>
+      <value n="j2eeWebAppName" v="ADFNoDB_11117-javaScriptViewControlle"/>
+      <value n="j2eeWebContextRoot" v="ADFNoDB_11117-javaScriptViewController"/>
    </hash>
    <hash n="oracle.jdeveloper.runner.RunConfigurations">
       <hash n="runConfigurationDefinitions">

@@ -151,7 +151,7 @@
                   </hash>
                </list>
             </hash>
-            <url n="jarURL" path="deploy/ADFNoDB_11117_declarativeCompVC_webapp1.war"/>
+            <url n="jarURL" path="deploy/ADFNoDB_11117_declarativeCompVC.war"/>
             <hash n="libraryDependencies">
                <value n="IncludeLibrariesFromOtherContainers" v="true"/>
             </hash>
@@ -164,8 +164,8 @@
       </list>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
-      <value n="j2eeWebAppName" v="ADFNoDB_11117-declarativeCompVC-webapp"/>
-      <value n="j2eeWebContextRoot" v="ADFNoDB_11117-declarativeCompVC-context-root"/>
+      <value n="j2eeWebAppName" v="ADFNoDB_11117-declarativeCompVC"/>
+      <value n="j2eeWebContextRoot" v="ADFNoDB_11117-declarativeCompVC"/>
    </hash>
    <hash n="oracle.jdeveloper.runner.RunConfigurations">
       <hash n="runConfigurationDefinitions">
