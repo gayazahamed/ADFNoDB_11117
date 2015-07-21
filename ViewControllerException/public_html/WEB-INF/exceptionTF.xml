@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="exceptionTF">
+    <default-activity id="__1">init</default-activity>
+    <managed-bean id="__5">
+      <managed-bean-name id="__2">Bean1</managed-bean-name>
+      <managed-bean-class id="__4">com.exp.Bean1</managed-bean-class>
+      <managed-bean-scope id="__3">pageFlow</managed-bean-scope>
+    </managed-bean>
+    <exception-handler id="__11">errors</exception-handler>
+    <method-call id="init">
+      <method>#{pageFlowScope.Bean1.init}</method>
+      <outcome id="__10">
+        <to-string/>
+      </outcome>
+    </method-call>
+    <view id="view1">
+      <page>/pages/view1.jsff</page>
+    </view>
+    <view id="error">
+      <page>/pages/error.jsff</page>
+    </view>
+    <method-call id="errors">
+      <method>#{pageFlowScope.Bean1.errors}</method>
+      <outcome id="__16">
+        <to-string/>
+      </outcome>
+    </method-call>
+    <control-flow-rule id="__6">
+      <from-activity-id id="__7">init</from-activity-id>
+      <control-flow-case id="__8">
+        <to-activity-id id="__9">view1</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__12">
+      <from-activity-id id="__13">errors</from-activity-id>
+      <control-flow-case id="__15">
+        <to-activity-id id="__14">error</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>
