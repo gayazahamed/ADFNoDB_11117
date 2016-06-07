@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.64.93" id="panelTabPageDef"
+                Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <taskFlow id="TF11" taskFlowId="/WEB-INF/TF1.xml#TF1"
+              activation="conditional"
+              xmlns="http://xmlns.oracle.com/adf/controller/binding"
+              active="#{pageFlowScope.Bean1.disclosed1}"/>
+    <taskFlow id="TF21" taskFlowId="/WEB-INF/TF2.xml#TF2"
+              activation="conditional"
+              xmlns="http://xmlns.oracle.com/adf/controller/binding"
+              active="#{pageFlowScope.Bean1.disclosed2}"/>
+  </executables>
+  <bindings/>
+</pageDefinition>

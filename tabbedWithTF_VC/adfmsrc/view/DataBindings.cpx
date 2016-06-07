@@ -8,9 +8,9 @@
     <dtfactory className="oracle.adf.controller.internal.dtrt.binding.BindingDTObjectFactory"/>
   </definitionFactories>
   <pageMap>
-    <page path="/Home.jsp" usageId="view_HomePageDef"/>
+    <page path="/panelTab.jspx" usageId="view_panelTabPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
-    <page id="view_HomePageDef" path="view.pageDefs.HomePageDef"/>
+    <page id="view_panelTabPageDef" path="view.pageDefs.panelTabPageDef"/>
   </pageDefinitionUsages>
 </Application>

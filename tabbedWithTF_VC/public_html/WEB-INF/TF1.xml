@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="TF1">
+    <default-activity id="__1">methodCall1</default-activity>
+    <managed-bean id="__3">
+      <managed-bean-name id="__5">TF1Bean1</managed-bean-name>
+      <managed-bean-class id="__2">TF1Bean1</managed-bean-class>
+      <managed-bean-scope id="__4">pageFlow</managed-bean-scope>
+    </managed-bean>
+    <method-call id="methodCall1">
+      <method>#{pageFlowScope.TF1Bean1.method1}</method>
+      <outcome id="__10">
+        <to-string/>
+      </outcome>
+    </method-call>
+    <view id="view1">
+      <page>/TF1View1.jsff</page>
+    </view>
+    <control-flow-rule id="__6">
+      <from-activity-id id="__7">methodCall1</from-activity-id>
+      <control-flow-case id="__9">
+        <to-activity-id id="__8">view1</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>
