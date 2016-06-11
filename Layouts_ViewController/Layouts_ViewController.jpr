@@ -57,24 +57,23 @@
       <string v="oracle.mds.internal.dt.ide.MDSLibraryCustCSProvider/mdsContentSet"/>
       <string v="oracle.bm.commonIde.data.project.ModelerProjectSettings/modelersContentSet"/>
       <string v="oracle.adfdtinternal.model.ide.settings.ADFMSettings/adfmContentSet"/>
-      <string v="oracle.tip.tools.ide.fabric.addin.SCAContentSetProvider/sca-content"/>
       <string v="oracle.toplink.workbench.addin/toplinkContentSet"/>
-      <string v="oracle.bpm.fusion.repository.BPMProjectSettings/bpmProjectsProcessesContentSet"/>
+      <string v="oracle.tip.tools.ide.fabric.addin.SCAContentSetProvider/sca-content"/>
    </list>
    <value n="defaultPackage" v="view"/>
    <hash n="oracle.ide.model.TechnologyScopeConfiguration">
       <list n="technologyScope">
-         <string v="ADF_FACES"/>
-         <string v="ADFc"/>
-         <string v="XML"/>
-         <string v="HTML"/>
          <string v="Java"/>
          <string v="JSP"/>
          <string v="JSF"/>
+         <string v="ADFc"/>
+         <string v="HTML"/>
+         <string v="XML"/>
+         <string v="ADF_FACES"/>
       </list>
    </hash>
    <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
-      <value n="internalEncoding" v="UTF8"/>
+      <value n="internalEncoding" v="Cp1252"/>
       <list n="Javac.commandline.optionlist">
          <string v="-g"/>
          <string v="-Xlint:all"/>
@@ -89,7 +88,7 @@
    </hash>
    <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
       <hash n="profileDefinitions">
-         <hash n="ADFNoDB_11117_javaScriptViewController_webapp1">
+         <hash n="ADFNoDB_11117_Layouts_ViewController_webapp1">
             <hash n="appletArchives"/>
             <hash n="appletFiles">
                <value n="autoInclude" v="true"/>
@@ -100,8 +99,8 @@
             <hash n="archiveOptions">
                <value n="hasManifest" v="false"/>
             </hash>
-            <url n="earURL" path="deploy/ADFNoDB_11117_javaScriptViewController_webapp1.ear"/>
-            <value n="enterpriseAppName" v="ADFNoDB_11117_javaScriptViewController_webapp1"/>
+            <url n="earURL" path="deploy/ADFNoDB_11117_Layouts_ViewController_webapp1.ear"/>
+            <value n="enterpriseAppName" v="ADFNoDB_11117_Layouts_ViewController_webapp1"/>
             <hash n="fileGroups">
                <list n="groups">
                   <hash>
@@ -149,21 +148,21 @@
                   </hash>
                </list>
             </hash>
-            <url n="jarURL" path="deploy/ADFNoDB_11117_javaScriptViewController_webapp1.war"/>
+            <url n="jarURL" path="deploy/ADFNoDB_11117_Layouts_ViewController_webapp1.war"/>
             <hash n="libraryDependencies">
                <value n="IncludeLibrariesFromOtherContainers" v="true"/>
             </hash>
             <value n="profileClass" v="oracle.jdeveloper.deploy.war.WarProfile"/>
-            <value n="profileName" v="ADFNoDB_11117_javaScriptViewController_webapp1"/>
+            <value n="profileName" v="ADFNoDB_11117_Layouts_ViewController_webapp1"/>
          </hash>
       </hash>
       <list n="profileList">
-         <string v="ADFNoDB_11117_javaScriptViewController_webapp1"/>
+         <string v="ADFNoDB_11117_Layouts_ViewController_webapp1"/>
       </list>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
-      <value n="j2eeWebAppName" v="ADFNoDB_11117-javaScriptViewControlle"/>
-      <value n="j2eeWebContextRoot" v="ADFNoDB_11117-javaScriptViewController"/>
+      <value n="j2eeWebAppName" v="ADFNoDB_11117-Layouts"/>
+      <value n="j2eeWebContextRoot" v="ADFNoDB_11117-Layouts"/>
    </hash>
    <hash n="oracle.jdeveloper.runner.RunConfigurations">
       <hash n="runConfigurationDefinitions">
@@ -179,6 +178,18 @@
    <hash n="oracle.jdevimpl.config.JProjectLibraries">
       <list n="exportedReferences">
          <hash>
+            <value n="id" v="JSP Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JSF 1.2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JSTL 1.2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
             <value n="id" v="ADF Page Flow Runtime"/>
             <value n="isJDK" v="false"/>
          </hash>
@@ -223,14 +234,6 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <value n="id" v="JSF 1.2"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="JSTL 1.2"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
             <value n="id" v="ADF DVT Faces Runtime"/>
             <value n="isJDK" v="false"/>
          </hash>
@@ -240,10 +243,6 @@
          </hash>
          <hash>
             <value n="id" v="ADF DVT Faces Databinding MDS Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="JSP Runtime"/>
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
@@ -253,6 +252,18 @@
       </list>
       <list n="libraryReferences">
          <hash>
+            <value n="id" v="JSP Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JSF 1.2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JSTL 1.2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
             <value n="id" v="ADF Page Flow Runtime"/>
             <value n="isJDK" v="false"/>
          </hash>
@@ -297,14 +308,6 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <value n="id" v="JSF 1.2"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="JSTL 1.2"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
             <value n="id" v="ADF DVT Faces Runtime"/>
             <value n="isJDK" v="false"/>
          </hash>
@@ -314,10 +317,6 @@
          </hash>
          <hash>
             <value n="id" v="ADF DVT Faces Databinding MDS Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="JSP Runtime"/>
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
@@ -331,17 +330,6 @@
    </hash>
    <hash n="oracle.jdevimpl.webapp.jsp.libraries.model.ProjectTagLibraries">
       <list n="tag-libraries">
-         <hash>
-            <hash n="baseLibrary">
-               <value n="name" v="ADF Faces Components"/>
-               <value n="version" v="11"/>
-            </hash>
-            <value n="jspVersion" v="1.2"/>
-            <value n="name" v="ADF Faces Components"/>
-            <value n="tldURL" v="@oracle.home@../oracle_common/modules/oracle.adf.view_11.1.1/adf-richclient-impl-11.jar!/META-INF/afu.tld"/>
-            <value n="URI" v="http://xmlns.oracle.com/adf/faces/rich"/>
-            <value n="version" v="11"/>
-         </hash>
          <hash>
             <hash n="baseLibrary">
                <value n="name" v="JSF Core"/>
@@ -366,6 +354,17 @@
          </hash>
          <hash>
             <hash n="baseLibrary">
+               <value n="name" v="ADF Faces Components"/>
+               <value n="version" v="11"/>
+            </hash>
+            <value n="jspVersion" v="1.2"/>
+            <value n="name" v="ADF Faces Components"/>
+            <value n="tldURL" v="@oracle.home@../oracle_common/modules/oracle.adf.view_11.1.1/adf-richclient-impl-11.jar!/META-INF/afu.tld"/>
+            <value n="URI" v="http://xmlns.oracle.com/adf/faces/rich"/>
+            <value n="version" v="11"/>
+         </hash>
+         <hash>
+            <hash n="baseLibrary">
                <value n="name" v="ADF Data Visualization"/>
                <value n="version" v="1.1"/>
             </hash>
@@ -376,15 +375,5 @@
             <value n="version" v="1.1"/>
          </hash>
       </list>
-   </hash>
-   <hash n="oracle.toplink.workbench.addin">
-      <hash n="toplinkContentSet">
-         <list n="pattern-filters">
-            <string v="+**"/>
-         </list>
-         <list n="url-path">
-            <url path="toplink/"/>
-         </list>
-      </hash>
    </hash>
 </jpr:project>
