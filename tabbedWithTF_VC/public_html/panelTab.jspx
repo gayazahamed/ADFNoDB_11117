@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <f:view>
+    <af:document id="d1">
+      <af:form id="f1">
+        <af:panelTabbed id="pt1">
+          <af:showDetailItem text="showDetailItem 1" id="sdi1"
+                             disclosed="#{pageFlowScope.Bean1.disclosed1}"
+                             disclosureListener="#{pageFlowScope.Bean1.discloselist1}">
+            <af:commandButton text="commandButton 1" id="cb1" action="#{pageFlowScope.Bean1.method1}"/>
+            <af:region value="#{bindings.TF11.regionModel}" id="r1"/>
+          </af:showDetailItem>
+          <af:showDetailItem text="showDetailItem 2" id="sdi2"
+                             disclosed="#{pageFlowScope.Bean1.disclosed2}"
+                             disclosureListener="#{pageFlowScope.Bean1.discloselist1}">
+            <af:commandButton text="commandButton 1" id="commandButton1"
+                              action="#{pageFlowScope.Bean1.method1}"></af:commandButton>
+            <af:region value="#{bindings.TF21.regionModel}" id="r2"/>
+            <af:commandButton text="Gooooo 1" id="commandButton2" action="Go"/>
+          </af:showDetailItem>
+        </af:panelTabbed>
+      </af:form>
+    </af:document>
+  </f:view>
+</jsp:root>
