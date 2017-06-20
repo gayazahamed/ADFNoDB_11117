@@ -59,20 +59,16 @@
       <string v="oracle.adfdtinternal.model.ide.settings.ADFMSettings/adfmContentSet"/>
       <string v="oracle.toplink.workbench.addin/toplinkContentSet"/>
       <string v="oracle.tip.tools.ide.fabric.addin.SCAContentSetProvider/sca-content"/>
-<<<<<<< HEAD
-=======
-      <string v="oracle.bpm.fusion.repository.BPMProjectSettings/bpmProjectsProcessesContentSet"/>
->>>>>>> 277e7229f7efa7c7653e8aac10a73b709dcb22f3
    </list>
    <value n="defaultPackage" v="view"/>
    <hash n="oracle.ide.model.TechnologyScopeConfiguration">
       <list n="technologyScope">
-         <string v="JSF"/>
-         <string v="ADFc"/>
-         <string v="XML"/>
          <string v="Java"/>
          <string v="JSP"/>
+         <string v="JSF"/>
+         <string v="ADFc"/>
          <string v="HTML"/>
+         <string v="XML"/>
          <string v="ADF_FACES"/>
       </list>
    </hash>
@@ -92,7 +88,7 @@
    </hash>
    <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
       <hash n="profileDefinitions">
-         <hash n="ADFNoDB_11117_ViewControllerException_webapp1">
+         <hash n="ADFNoDB_11117_Layouts_ViewController_webapp1">
             <hash n="appletArchives"/>
             <hash n="appletFiles">
                <value n="autoInclude" v="true"/>
@@ -103,8 +99,8 @@
             <hash n="archiveOptions">
                <value n="hasManifest" v="false"/>
             </hash>
-            <url n="earURL" path="deploy/ADFNoDB_11117_ViewControllerException_webapp1.ear"/>
-            <value n="enterpriseAppName" v="ADFNoDB_11117_ViewControllerException_webapp1"/>
+            <url n="earURL" path="deploy/ADFNoDB_11117_Layouts_ViewController_webapp1.ear"/>
+            <value n="enterpriseAppName" v="ADFNoDB_11117_Layouts_ViewController_webapp1"/>
             <hash n="fileGroups">
                <list n="groups">
                   <hash>
@@ -152,21 +148,21 @@
                   </hash>
                </list>
             </hash>
-            <url n="jarURL" path="deploy/ADFNoDB_11117_ViewControllerException_webapp1.war"/>
+            <url n="jarURL" path="deploy/ADFNoDB_11117_Layouts_ViewController_webapp1.war"/>
             <hash n="libraryDependencies">
                <value n="IncludeLibrariesFromOtherContainers" v="true"/>
             </hash>
             <value n="profileClass" v="oracle.jdeveloper.deploy.war.WarProfile"/>
-            <value n="profileName" v="ADFNoDB_11117_ViewControllerException_webapp1"/>
+            <value n="profileName" v="ADFNoDB_11117_Layouts_ViewController_webapp1"/>
          </hash>
       </hash>
       <list n="profileList">
-         <string v="ADFNoDB_11117_ViewControllerException_webapp1"/>
+         <string v="ADFNoDB_11117_Layouts_ViewController_webapp1"/>
       </list>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
-      <value n="j2eeWebAppName" v="ADFNoDB_11117-ViewControllerException"/>
-      <value n="j2eeWebContextRoot" v="ADFNoDB_11117-ViewControllerException"/>
+      <value n="j2eeWebAppName" v="ADFNoDB_11117-Layouts"/>
+      <value n="j2eeWebContextRoot" v="ADFNoDB_11117-Layouts"/>
    </hash>
    <hash n="oracle.jdeveloper.runner.RunConfigurations">
       <hash n="runConfigurationDefinitions">
@@ -182,6 +178,10 @@
    <hash n="oracle.jdevimpl.config.JProjectLibraries">
       <list n="exportedReferences">
          <hash>
+            <value n="id" v="JSP Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
             <value n="id" v="JSF 1.2"/>
             <value n="isJDK" v="false"/>
          </hash>
@@ -246,32 +246,16 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <value n="id" v="JSP Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
             <value n="id" v="Oracle JEWT"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="ADF Common Web Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="Oracle Page Templates"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="ADF Faces Databinding Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="ADF Model Runtime"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>
       <list n="libraryReferences">
          <hash>
+            <value n="id" v="JSP Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
             <value n="id" v="JSF 1.2"/>
             <value n="isJDK" v="false"/>
          </hash>
@@ -336,27 +320,7 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <value n="id" v="JSP Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
             <value n="id" v="Oracle JEWT"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="ADF Common Web Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="Oracle Page Templates"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="ADF Faces Databinding Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="ADF Model Runtime"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>
@@ -411,15 +375,5 @@
             <value n="version" v="1.1"/>
          </hash>
       </list>
-   </hash>
-   <hash n="oracle.toplink.workbench.addin">
-      <hash n="toplinkContentSet">
-         <list n="pattern-filters">
-            <string v="+**"/>
-         </list>
-         <list n="url-path">
-            <url path="toplink/"/>
-         </list>
-      </hash>
    </hash>
 </jpr:project>
