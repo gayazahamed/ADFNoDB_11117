@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <script type="text/javascript">
+    function showText(d) {
+       // alert('Source :' + d.getSource());
+        //alert('hello');
+        var page = AdfPage.PAGE;
+        alert(page.getViewId());
+        d.cancel();
+    }
+    
+    
+    function validate(evt) {
+   // alert('hello');
+    var comp = evt.getSource();
+    //AdfCustomEvent.queue(comp, comp.getProperty("methodName"), {val:comp.getSubmittedValue()}, false);
+    
+    AdfCustomEvent.queue(comp, 'method1', {param1 : 'param1',param2 : 'param2'}, true);
+   // evt.cancel();
+   
+}
+  </script>
+  <f:view>
+    <af:document id="d1">
+      <af:form id="f1">
+        <af:commandButton text="commandButton 1" id="cb1" >
+          <af:clientListener type="action" method="validate"/>
+        </af:commandButton>
+        <af:inputText label="Label 1" id="it1">
+          <af:clientListener method="validate" type="blur"/>
+          <af:serverListener type="method1" method="#{pageFlowScope.Bean1.method1}"/>
+        </af:inputText>
+      </af:form>
+    </af:document>
+  </f:view>
+  <!--oracle-jdev-comment:preferred-managed-bean-name:Bean1-->
+</jsp:root>

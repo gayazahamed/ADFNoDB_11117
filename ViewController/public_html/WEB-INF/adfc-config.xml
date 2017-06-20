@@ -5,4 +5,9 @@
     <managed-bean-class id="__3">com.shaik.Bean1</managed-bean-class>
     <managed-bean-scope id="__2">request</managed-bean-scope>
   </managed-bean>
+  <managed-bean id="__7">
+    <managed-bean-name id="__8">managedBean1</managed-bean-name>
+    <managed-bean-class id="__6">com.shaik.ManagedBean1</managed-bean-class>
+    <managed-bean-scope id="__5">pageFlow</managed-bean-scope>
+  </managed-bean>
 </adfc-config>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <f:view>
+    <af:document id="d1">
+      <af:form id="f1">
+        <af:panelGroupLayout id="pgl1" layout="vertical">
+          <af:iterator id="i1" value="#{pageFlowScope.managedBean1.keySet}"
+                       var="row">
+            <af:panelGroupLayout id="pgl2">
+              <af:iterator id="i2" value="#{pageFlowScope.managedBean1.valMap}"
+                           var="cVal">
+                <af:outputText value="#{row}" id="ot4"
+                               inlineStyle="font-weight:bold;color:darkblue;"/>
+                <af:outputText value="     :      " id="ot3"/>
+                <af:outputText value="#{cVal[row]}" id="ot1"/>
+              </af:iterator>
+            </af:panelGroupLayout>
+          </af:iterator>
+        </af:panelGroupLayout>
+      </af:form>
+    </af:document>
+  </f:view>
+</jsp:root>

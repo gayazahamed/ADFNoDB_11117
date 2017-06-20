@@ -2,9 +2,16 @@
 <jws:workspace xmlns:jws="http://xmlns.oracle.com/ide/project">
    <hash n="adrs-workspace-properties">
       <value n="adrs-instance-binding" v="DefaultServer"/>
+      <value n="deploy-timeout" v="0"/>
+      <value n="runtime-application-name" v=""/>
    </hash>
    <url n="application-source-directory" path="src/"/>
    <value n="appTemplateId" v="adfWebappApplicationTemplate"/>
+   <hash n="appWebServicePolicy">
+      <value n="location"/>
+      <value n="LOCATION_TYPE" v="policy.config.PolicyOptions.LocationType.FILE_STORE"/>
+      <value n="SERVER_LOCATION" v="IntegratedWebLogicServer"/>
+   </hash>
    <hash n="component-versions">
       <value n="oracle.adf.share.dt.migration.jps.JaznCredStoreMigratorHelper" v="11.1.1.1.0"/>
       <value n="oracle.adfdt.controller.adfc.source.migration.SavePointDataSourceForWLSMigrator" v="11.1.1.1.0"/>
@@ -25,6 +32,7 @@
       <hash><url n="URL" path="JavaProject/javaa.jpr"/></hash>
       <hash><url n="URL" path="javaScriptViewController/javaScriptViewController.jpr"/></hash>
       <hash><url n="URL" path="Model/Model.jpr"/></hash>
+      <hash><url n="URL" path="modelPlaceholderDataControl/modelPlaceholderDataControl.jpr"/></hash>
       <hash><url n="URL" path="tabbedWithTF_VC/tabbedWithTF_VC.jpr"/></hash>
       <hash><url n="URL" path="ViewController/ViewController.jpr"/></hash>
       <hash><url n="URL" path="ViewControllerException/ViewControllerException.jpr"/></hash>
